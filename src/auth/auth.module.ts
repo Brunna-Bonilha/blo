@@ -18,7 +18,7 @@ import { AuthController } from './controllers/auth.controller';
             signOptions: { expiresIn: '1h' },
         })
     ],
-    providers:[Bcrypt, AuthService, LocalStrategy, JwtStrategy]
+    providers:[Bcrypt, AuthService, LocalStrategy, JwtStrategy],
     controllers:[AuthController],
     exports:[Bcrypt],
 })

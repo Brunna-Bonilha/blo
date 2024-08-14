@@ -6,6 +6,7 @@ import { Tema } from './tema/entities/tema.entity';
 import { TemaModule } from './postagem/tema/tema.module';
 import { UsuarioLogin } from '../test/auth/entities/usuariologin.entity';
 import { UsuarioModule } from '../test/usuario/usuario.module';
+import { AppController } from './app.controller';
 
 
 
@@ -26,7 +27,7 @@ import { UsuarioModule } from '../test/usuario/usuario.module';
   AuthModule,
   UsuarioModule,
 ],
-    controllers: [],
+    controllers: [AppController],
     providers: [],
 })
 export class AppModule {}
